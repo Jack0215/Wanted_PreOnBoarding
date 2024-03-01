@@ -21,7 +21,7 @@ const List: React.FC = () => {
 
   return (
     <div>
-      <h1>Todo List</h1>
+      <h1>List</h1>
       <input
         type="text"
         value={inputText}
