@@ -20,8 +20,8 @@ const List: React.FC = () => {
   };
 
   return (
-    <div>
-      <h1>List</h1>
+    <div style={{ marginLeft: "50px" }}>
+      <h1>Todo List</h1>
       <input
         type="text"
         value={inputText}
@@ -32,7 +32,12 @@ const List: React.FC = () => {
         {todos.map((todo, index) => (
           <li key={index}>
             {todo}
-            <button onClick={() => handleDeleteTodo(index)}>Delete</button>
+            <button
+              style={{ marginLeft: "10px" }}
+              onClick={() => handleDeleteTodo(index)}
+            >
+              Delete
+            </button>
           </li>
         ))}
       </ul>

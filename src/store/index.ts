@@ -1,4 +1,4 @@
-import { createStore } from "redux";
+import { legacy_createStore as createStore } from "redux";
 
 // 액션 타입 정의
 export const ADD_TODO = "ADD_TODO";
